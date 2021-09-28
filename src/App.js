@@ -9,6 +9,7 @@ import {
   ThemeProvider,
   createTheme,
   useMediaQuery,
+  Link,
 } from '@mui/material'
 
 import DarkModeIcon from '@mui/icons-material/Brightness4';
@@ -62,11 +63,15 @@ export const App = () => {
               sx={{
                 display: 'flex',
                 flexDirection: 'row-reverse',
+                gap:2
               }}
             >
               <Button variant='contained' color='primary' >
                 Login
               </Button>
+              <Link href="#" onClick={()=>console.log('>>> click')}>
+                Forgot password?
+              </Link>
             </Box>
           </Box>
         </Paper>
