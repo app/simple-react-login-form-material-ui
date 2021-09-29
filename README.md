@@ -1,6 +1,9 @@
 ## Simple React login + recovery form with Material UI  
 
 This is simplest template/boilerplate/starter code with up to date dependencies at the time of publication.  
+<p align="center">
+   <img src="https://raw.githubusercontent.com/app/simple-react-login-form-material-ui/main/demo-screen.jpg" alt="demo screen"/>
+</p>
 
 ### Dependencies  
 - react  
