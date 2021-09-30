@@ -1,0 +1,8 @@
+a:link, a:active, a:hover {
+  /* color: inherit; */
+  color: #66b2ff;
+  text-decoration-line: underline;
+  text-decoration-thickness: initial;
+  text-decoration-style: initial;
+  text-decoration-color: rgba(51, 153, 255, 0.4);  
+}
