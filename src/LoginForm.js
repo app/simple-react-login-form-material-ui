@@ -4,10 +4,10 @@ import {
   Button,
   Paper,
   TextField,
+  Link,
 } from '@mui/material'
 
 import {
-  Link,
   useHistory,
 } from "react-router-dom";
 
@@ -40,7 +40,9 @@ export const LoginForm = () => {
               >
                 Login
               </Button>
-              <Link to={{pathname:"/recovery"}}>
+              <Link href="#"
+                onClick={(event)=> { event.preventDefault(); history.push('/recovery') }}
+              >
                 Forgot password?
               </Link>
             </Box>
