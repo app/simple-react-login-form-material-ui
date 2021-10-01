@@ -1,6 +1,7 @@
 {
   "name": "simple-react-login-form-using-material-ui",
   "version": "1.0.0",
+  "license":"BSD-3-Clause",
   "type": "module",
   "description": "React login form using Material UI's components",
   "keywords": [
