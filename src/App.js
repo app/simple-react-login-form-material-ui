@@ -6,9 +6,16 @@ import LoginForm from "./LoginForm.js";
 import RecoveryForm from "./RecoveryForm.js";
 import UserAccountPage from "./UserAccountPage.js";
 
+const getCustomPalette = (mode) => ({
+  palette: {
+    mode,
+    ...(mode === "dark" ? { background: { default: "#1b1b1b" } } : {}),
+  },
+});
+
 function ThemeManager({ children }) {
   const [mode] = useModeSwitch();
-  const theme = createTheme({ palette: { mode } });
+  const theme = createTheme(getCustomPalette(mode));
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 }
 
